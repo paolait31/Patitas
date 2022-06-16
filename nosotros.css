@@ -1,0 +1,312 @@
+body {
+  background: #CFDBF7;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  height: 100%;
+}
+
+header {
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+  height: 90px;
+  overflow:hidden; /* Eliminamos errores de float */
+  background:#D3CBD5;
+  margin-bottom:20px;
+}
+
+.wrapper {
+  width:90%; /* Establecemos que el ancho sera del 90% */
+  max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+  margin:auto; /* Centramos los elementos */
+  overflow:hidden; /* Eliminamos errores de float */
+}
+
+header .logo {
+  color:#566573;
+  font-size:50px;
+  line-height:90px;
+  float:left;
+}
+
+header nav {
+  float:right;
+  line-height:100px;
+}
+
+header nav a {
+  display:inline-block;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 20px;
+  line-height:normal;
+  font-size:20px;
+  font-weight:bold;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+
+header nav a:hover {
+  background: #f0a0a0;
+  border-radius:50px;
+}
+
+.container {
+  width: 100%;
+  height: 60px;
+}
+
+.text {
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font: italic bold 60px Georgia, Serif;
+  text-shadow: -4px 3px 0 #A496A3, -14px 7px 0 #666768;
+}
+
+h1 {
+  font-size: 200%;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    top: 0px; } }
+
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1; }
+  100% {
+    top: -400px;
+    opacity: 0; } }
+
+  body #scene {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden; }
+    body #scene #left-zone {
+      background: #fff;
+      height: 75%;
+      flex-grow: 0;
+      display: flex;
+      width: 350px;
+      align-items: center;
+      justify-content: left; }
+      body #scene #left-zone .list {
+        display: flex;
+        list-style: none;
+        align-content: stretch;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0; }
+        body #scene #left-zone .list li.item input[type="radio"] {
+          display: none; }
+          body #scene #left-zone .list li.item input[type="radio"] ~ label {
+            font-size: 18px;
+            display: block;
+            opacity: 0.5;
+            height: 50px;
+            text-align: center;
+            line-height: 50px; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ label:first-letter {
+              text-transform: uppercase; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ label:hover {
+              opacity: 0.75;
+              cursor: pointer; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ label.label_patitas:before {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              margin-left: 15px;
+              background-image: url("logo.jpg");
+              background-position: center;
+              background-size: 75% 75%;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ label.label_historia:before {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              margin-left: 15px;
+              background-image: url("logohistoria.png");
+              background-position: center;
+              background-size: 75% 75%;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ label.label_giro:before {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              margin-left: 15px;
+              background-image: url("logogiro.png");
+              background-position: center;
+              background-size: 75% 75%;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ label.label_mision:before {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              margin-left: 15px;
+              background-image: url("logomision.png");
+              background-position: center;
+              background-size: 75% 75%;
+              background-repeat: no-repeat; }
+              body #scene #left-zone .list li.item input[type="radio"] ~ label.label_vision:before {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              margin-left: 15px;
+              background-image: url("logovision.png");
+              background-position: center;
+              background-size: 75% 75%;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ label.label_valores:before {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              margin-left: 15px;
+              background-image: url("logovalores.png");
+              background-position: center;
+              background-size: 75% 75%;
+              background-repeat: no-repeat; }
+          body #scene #left-zone .list li.item input[type="radio"] ~ .content {
+            position: absolute;
+            left: 350px;
+            top: -400px;
+            width: 650px;
+            height: 400px;
+            animation-duration: 0.75s;
+            animation-name: slideout;
+            animation-timing-function: ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_patitas .picto {
+              height: 110px;
+              width: 110px;
+              background-image: url("mascotas.jpeg");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_patitas h1 {
+              color: #76D7C4; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_historia .picto {
+              height: 100px;
+              width: 100px;
+              background-image: url("logohistoria.png");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_historia h1 {
+              color: #F5D76E; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_giro .picto {
+              height: 100px;
+              width: 100px;
+              background-image: url("logogiro.png");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_giro h1 {
+              color: #C9ADD5; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_mision .picto {
+              height: 100px;
+              width: 100px;
+              background-image: url("logomision.png");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_mision h1 {
+              color: #A7B0C4; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_vision .picto {
+              height: 100px;
+              width: 100px;
+              background-image: url("logovision.png");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_vision h1 {
+              color: #EDA1B0; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_valores .picto {
+              height: 100px;
+              width: 100px;
+              background-image: url("logovalores.png");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_valores h1 {
+              color: #B1DFA3; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content h1:first-letter {
+              text-transform: uppercase; }
+            body #scene #left-zone .list li.item input[type="radio"] ~ .content p {
+              max-width: 50%;
+              font-size: 17px;
+              text-align: center; }
+          body #scene #left-zone .list li.item input[type="radio"]:checked ~ label {
+            opacity: 1;
+            animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+            body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_patitas {
+              color: #76D7C4;
+              border-right: solid 4px #76D7C4; }
+            body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_historia {
+              color: #F5D76E;
+              border-right: solid 4px #F5D76E; }
+            body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_giro {
+              color: #C9ADD5;
+              border-right: solid 4px #C9ADD5; }
+            body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_mision {
+              color: #A7B0C4;
+              border-right: solid 4px #A7B0C4; }
+            body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_vision {
+              color: #EDA1B0;
+              border-right: solid 4px #EDA1B0; }
+            body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_valores {
+              color: #B1DFA3;
+              border-right: solid 4px #B1DFA3; }
+          body #scene #left-zone .list li.item input[type="radio"]:checked ~ .content {
+            animation-duration: 0.75s;
+            animation-name: slidein;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+    body #scene #middle-border {
+      background-color: #eee;
+      height: 75%;
+      flex-grow: 1;
+      max-width: 2px;
+      z-index: 0; }
+    body #scene #right-zone {
+      background: #fff;
+      height: 100%;
+      flex-grow: 3; }
